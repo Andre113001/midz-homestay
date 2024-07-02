@@ -7,13 +7,13 @@ const Contact = () => {
   return (
     <div className=''>
         <div className='flex justify-center bg-slate-100'>
-            <div className='p-10'>
+            <div className='p-10 w-1/2'>
                 <h1 className='text-5xl font-bold'>Contact Us</h1>
                 <p className='text-2xl'>You may contact us below</p>
-                <section className='w-full flex flex-col gap-2'>
-                    <ContactCard icon={<Call sx={{fontSize: 40}}/>} content={"+63 923 233 853 0123"} />
-                    <ContactCard icon={<Facebook sx={{fontSize: 40}} />} content={"@midzhomestay"} />
-                    <ContactCard icon={<AlternateEmail sx={{fontSize: 40}}/>} content={"midzhomestay@email.com"} />
+                <section className='w-full flex flex-col h-1/2 justify-center'>
+                    <ContactCard icon={<Call sx={{fontSize: 40}}/>} content={"09164228893"} />
+                    <a href="https://web.facebook.com/MidzHomestay"><ContactCard icon={<Facebook sx={{fontSize: 40}} />} content={"@MidzHomestay"} /></a>
+                    {/* <ContactCard icon={<AlternateEmail sx={{fontSize: 40}}/>} content={"midzhomestay@email.com"} /> */}
                 </section>
             </div>
             <div className='w-full h-full'>

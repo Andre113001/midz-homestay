@@ -19,7 +19,7 @@ const TestimonialCard = ({personName, platform, text}) => {
     return (
     <Fragment>
         <section className="w-1/2 h-[17rem] p-12 rounded-2xl shadow-xl overflow-hidden flex flex-col justify-between">
-            <div className="flex flex-wrap justify-between items-center mb-5">
+            <div className="flex flex-wrap justify-between  items-center mb-5">
                 <div className="flex flex-col font-bold">
                     <h5>{personName}</h5>
                     <Rating name="read-only" value={5} readOnly />
