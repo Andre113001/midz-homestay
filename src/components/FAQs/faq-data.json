@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "question": "What is life 1",
+        "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam necessitatibus nam aliquid voluptatum vel laudantium laborum commodi culpa? Atque doloribus error possimus quia commodi delectus ex aliquid? Omnis, minus."
+    },
+    {
+        "id": 2,
+        "question": "What is life 2",
+        "answer": "LolLorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam necessitatibus nam aliquid voluptatum vel laudantium laborum commodi culpa? Atque doloribus error possimus quia commodi delectus ex aliquid? Omnis, minus."
+    },
+    {
+        "id": 3,
+        "question": "What is life 3",
+        "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam necessitatibus nam aliquid voluptatum vel laudantium laborum commodi culpa? Atque doloribus error possimus quia commodi delectus ex aliquid? Omnis, minus."
+    },
+    {
+        "id": 4,
+        "question": "What is life 4",
+        "answer": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam necessitatibus nam aliquid voluptatum vel laudantium laborum commodi culpa? Atque doloribus error possimus quia commodi delectus ex aliquid? Omnis, minus."
+    }
+]

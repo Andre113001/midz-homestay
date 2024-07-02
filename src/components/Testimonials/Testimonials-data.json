@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "personName": "Maya Jensen",
+      "platform": "Airbnb",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis nec augue. Cum sociis natoque penatibus et magnis dis parturage"
+    },
+    {
+      "id": 2,
+      "personName": "Ethan Patel",
+      "platform": "Agoda",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"
+    },
+    {
+      "id": 3,
+      "personName": "Lily Chen",
+      "platform": "Airbnb",
+      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quorum"
+    },
+    {
+      "id": 4,
+      "personName": "Owen Lee",
+      "platform": "Agoda",
+      "text": "Nemo enim ipsam voluptatem quia voluptate dicta sunt explicabo. Nihil impedit quo minus id quod maxime placeat facere possimus"
+    },
+    {
+      "id": 5,
+      "personName": "Sophia Kim",
+      "platform": "Airbnb",
+      "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil praesentium totam rem aperiam"
+    },
+    {
+      "id": 6,
+      "personName": "Black Rider",
+      "platform": "Agoda",
+      "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil praesentium totam rem aperiam"
+    }
+  ]

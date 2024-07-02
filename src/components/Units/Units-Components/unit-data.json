@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "unit": "Midz Homestay",
+        "directory": "./Units-images/midz.jpg"
+    },
+    {
+        "id": 2,
+        "unit": "Villa Alfonso",
+        "directory": "./Units-images/alfonso.jpg"
+    },
+    {
+        "id": 3,
+        "unit": "Miguel's Homestay",
+        "directory": "./Units-images/miguel.jpg"
+    },
+    {
+        "id": 4,
+        "unit": "Abiza Homestay",
+        "directory": "./Units-images/abiza.jpg"
+    }
+]

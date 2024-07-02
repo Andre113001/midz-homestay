@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: 'AestheticMonoline';
+  src: url('../src/assets/fonts/AestheticMonoline.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+};
+
+.aesthetic-font {
+  font-family: 'AestheticMonoline', sans-serif;
+}
