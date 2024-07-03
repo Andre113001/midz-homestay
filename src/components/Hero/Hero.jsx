@@ -37,7 +37,7 @@ const Hero = () => {
         {/* Main Hero Section */}
         <section className="relative h-screen">
             <video
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute w-full h-full object-cover"
                 src={videoSrc}
                 autoPlay
                 muted
@@ -50,12 +50,12 @@ const Hero = () => {
                 </nav>
                 <div className="flex flex-col justify-center items-center">
                     <div className="flex flex-col justify-center items-center">
-                        <h1 className="text-[#f3f3f3] text-wrap flex-wrap xl:text-[7rem] font-bold text-[5rem] leading-[7rem]">MIDZ HOMESTAY</h1>
-                        <h5 className="text-[#539de3] text-4xl font-bold aesthetic-font italic">"Home Away From Home"</h5>
+                        <h1 className="text-[#f3f3f3] text-center phone:text-6xl tablet:text-7xl desktop: text-wrap flex-wrap font-bold text-[5rem] leading-[7rem]">MIDZ HOMESTAY</h1>
+                        <h5 className="text-[#539de3] tablet:text-4xl phone:text-xl font-bold aesthetic-font italic">"Home Away From Home"</h5>
                     </div>
                     <div className="mt-[5rem] gap-3 flex flex-col items-center">
-                        <h3 className="text-white text-5xl font-bold">Book Now!</h3>
-                        <div className="flex gap-4 md:flex-row sm:flex-col">
+                        <h3 className="text-white desktop:text-5xl phone:text-3xl font-bold">Book Now!</h3>
+                        <div className="flex gap-4 desktop:flex-row phone:flex-col">
                             <IconButton onClick={() => linkNewTab('https://www.airbnb.com/rooms/23108218?source_impression_id=p3_1719893308_P3dJ52l1q7AjXP69')} sx={glassClass}>
                                 <img src={AirbnbIcon} alt="Airbnb" style={{ width: '70%' }} />
                             </IconButton>
@@ -63,8 +63,8 @@ const Hero = () => {
                                 <img src={AgodaIcon} alt="Agoda" style={{ width: '70%' }} />
                             </IconButton>
                         </div>
+                        <span className='animate-bounce text-white absolute bottom-0 mb-8'>Scroll down for more details</span>
                     </div>
-                    <span className='animate-bounce text-white absolute bottom-0 mb-5'>Scroll down for more details</span>
                 </div>
             </div>
         </section>

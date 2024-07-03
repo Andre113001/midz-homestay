@@ -1,38 +1,38 @@
 [
     {
       "id": 1,
-      "personName": "Maya Jensen",
+      "personName": "Mylene",
       "platform": "Airbnb",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis nec augue. Cum sociis natoque penatibus et magnis dis parturage"
+      "text": "very clean, very spacious, very comfortable place to stay. my husband and I enjoyed our pawmily dog. the hosts/owners were very friendly and responsive. very relaxed and safe feeling to stay. highly recommended!!!"
     },
     {
       "id": 2,
-      "personName": "Ethan Patel",
+      "personName": "Shirley",
       "platform": "Agoda",
-      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"
+      "text": "Excellent overall. Love the place and very convenient. And very close to the port going to Leyte. Thank you so much for trusting us."
     },
     {
       "id": 3,
-      "personName": "Lily Chen",
+      "personName": "Gino",
       "platform": "Airbnb",
-      "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quorum"
+      "text": "Our third stay at Angelo's and the place keeps getting better. They really make you feel at home. The place is right on the highway and close to Matnog town. Best place to stay when you're going or stopping by Matnog!"
     },
     {
       "id": 4,
-      "personName": "Owen Lee",
+      "personName": "Kristen",
       "platform": "Agoda",
-      "text": "Nemo enim ipsam voluptatem quia voluptate dicta sunt explicabo. Nihil impedit quo minus id quod maxime placeat facere possimus"
+      "text": "Super amazing place to stay. Much more spacious than what expected, great for big groups! Plus they have everything you need for your stay. The people there are super accomodating. It's such a lifesaver that they have a sari-sari store up front. Would definitely go back 10/10 💜✨"
     },
     {
       "id": 5,
-      "personName": "Sophia Kim",
+      "personName": "Bien",
       "platform": "Airbnb",
-      "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil praesentium totam rem aperiam"
+      "text": "A must-try if you’re passing thru Matnog. Value for money is unbeatable. The caretaker, Ate Yvonne, recommended restaurants and tourist spots I could visit while I was “stranded”. She even got me a vaccination appointment at the health center."
     },
     {
       "id": 6,
-      "personName": "Black Rider",
+      "personName": "Riza",
       "platform": "Agoda",
-      "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil praesentium totam rem aperiam"
+      "text": "Host was very accomodating and easy to talk with. They are quick to respond to our requests. Totally awesome stay for.big groups! :-)"
     }
   ]

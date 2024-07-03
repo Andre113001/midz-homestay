@@ -4,7 +4,7 @@ const UnitCard = ({ unitName, imgName, logo, newStatus, linkButtons }) => {
   const [newUnit, setNewUnit] = useState(newStatus);
 
   return (
-    <div className='relative w-1/2 h-[30rem] text-center rounded-lg overflow-hidden group shadow-xl'>
+    <div className='relative phone:w-full tablet:w-1/2 tablet:h-[30rem] phone:h-[20rem] text-center rounded-lg overflow-hidden group shadow-xl'>
       {/* Image */}
       <div className='relative w-full h-full'>
         <img src={imgName} className='h-full w-full object-cover rounded-lg' alt={unitName} />
@@ -16,8 +16,8 @@ const UnitCard = ({ unitName, imgName, logo, newStatus, linkButtons }) => {
         {/* Overlay */}
         <div className='absolute inset-0 z-10 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
           <div className='text-white text-center w-1/2'>
-            <img src={logo} alt='Logo' className='w-[100px] h-[100px] mx-auto mb-2 rounded-full object-cover' />
-            <h3 className='text-2xl font-bold mb-2'>{unitName}</h3>
+            <img src={logo} alt='Logo' className='tablet:w-[100px] tablet:h-[100px] phone:w-[80px] phone:h-[80px] mx-auto mb-2 rounded-full object-cover' />
+            <h3 className='tablet:text-2xl phone:text-lg font-bold mb-2'>{unitName}</h3>
             {linkButtons}
           </div>
         </div>

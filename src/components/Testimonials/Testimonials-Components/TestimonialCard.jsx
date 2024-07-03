@@ -3,23 +3,21 @@ import AirbnbImg from '../../../assets/icons/airbnb.png';
 import AgodaImg from '../../../assets/icons/agoda.png';
 import { Rating } from '@mui/material';
 
-const TestimonialCard = ({personName, platform, text}) => {
-
+const TestimonialCard = ({ personName, platform, text }) => {
     const Icons = {
         Airbnb: {
             icon: AirbnbImg,
-            height: "h-9"
+            height: "tablet:h-9 phone:h-5"
         },
         Agoda: {
             icon: AgodaImg,
-            height: "h-12"
+            height: "tablet:h-12 phone:h-9"
         }
-    }
+    };
 
     return (
-    <Fragment>
-        <section className="w-1/2 h-[17rem] p-12 rounded-2xl shadow-xl overflow-hidden flex flex-col justify-between">
-            <div className="flex flex-wrap justify-between  items-center mb-5">
+        <section className="tablet:w-1/2 phone:w-full tablet:h-[17rem] phone:h-[22rem] p-12 rounded-2xl shadow-xl flex flex-col tablet:justify-between mb-8">
+            <div className="flex flex-wrap justify-between items-center mb-5">
                 <div className="flex flex-col font-bold">
                     <h5>{personName}</h5>
                     <Rating name="read-only" value={5} readOnly />
@@ -31,11 +29,10 @@ const TestimonialCard = ({personName, platform, text}) => {
                 ) : null}
             </div>
             <div className="flex-grow overflow-hidden">
-            <p className="overflow-y-auto italic">"{text}"</p>
+                <p className="italic">"{text}"</p>
             </div>
         </section>
-    </Fragment>
-)
-}
+    );
+};
 
 export default TestimonialCard
