@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import { motion } from 'framer-motion';
+import heroImg from './hero-img.png';
 import { IconButton } from '@mui/material';
 import AgodaIcon from '../../assets/icons/agoda.png';
 import AirbnbIcon from '../../assets/icons/airbnb.png';
 import MidzIcon from '../../assets/icons/midz.jpg';
 import videoSrc from '../../assets/videos/midz-video.mp4';
-import heroImg from './hero-img.png';
 
 const Hero = () => {
-    const [videoLoaded, setVideoLoaded] = useState(false);
 
     const glassClass = {
         backgroundColor: 'rgba(255, 255, 255, 0.8)', // Semi-transparent background
@@ -33,36 +31,17 @@ const Hero = () => {
         window.open(link, '_blank');
     };
 
-    // Use useEffect to listen for video load event
-    useEffect(() => {
-        const handleVideoLoaded = () => {
-            setVideoLoaded(true);
-        };
-
-        // Add event listener for video loaded data
-        const videoElement = document.getElementById('hero-video');
-        videoElement.addEventListener('loadeddata', handleVideoLoaded);
-
-        // Clean up event listener
-        return () => {
-            videoElement.removeEventListener('loadeddata', handleVideoLoaded);
-        };
-    }, []);
+    const textVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 }
+    };
 
     return (
         <Fragment>
             {/* Main Hero Section */}
             <section className="relative h-screen">
-                {!videoLoaded && (
-                    <img
-                        src={heroImg}
-                        alt="Hero Background"
-                        className="absolute w-full h-full object-cover"
-                    />
-                )}
                 <video
-                    id="hero-video"
-                    className={`absolute w-full h-full object-cover ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    className="absolute w-full h-full object-cover"
                     src={videoSrc}
                     autoPlay
                     muted
@@ -75,18 +54,20 @@ const Hero = () => {
                     </nav>
                     <div className="flex flex-col justify-center items-center">
                         <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial="hidden"
+                            animate="visible"
                             transition={{ duration: 1, ease: "easeOut" }}
+                            variants={textVariants}
                         >
-                            <h1 className="text-[#f3f3f3] text-center phone:text-6xl tablet:text-7xl desktop:text-wrap font-bold text-[5rem] leading-[7rem]">MIDZ HOMESTAY</h1>
+                            <h1 className="text-[#f3f3f3] text-center phone:text-6xl tablet:text-7xl desktop: text-wrap flex-wrap font-bold text-[5rem] leading-[7rem]">MIDZ HOMESTAY</h1>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial="hidden"
+                            animate="visible"
                             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+                            variants={textVariants}
                         >
-                            <h5 className="text-[#539de3] tablet:text-4xl phone:text-xl font-bold italic">"Home Away From Home"</h5>
+                            <h5 className="text-[#539de3] tablet:text-4xl phone:text-xl font-bold aesthetic-font italic">"Home Away From Home"</h5>
                         </motion.div>
                     </div>
                     <div className="mt-[5rem] gap-3 flex flex-col items-center">
