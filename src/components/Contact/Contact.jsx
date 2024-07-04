@@ -3,14 +3,24 @@ import ContactCard from './Contact-Components/ContactCard'
 import mapImg from './map.png'
 import { Call, Facebook, AlternateEmail, Face } from '@mui/icons-material'
 
+import { motion } from 'framer-motion'
+
 const Contact = () => {
   return (
     <div className='h-screen w-1/2 flex flex-row justify-center'>
         <div className='flex w-full h-full justify-center items-center'>
-            <div className='flex tablet:gap-20 justify-center phone:flex-col tablet:flex-row rounded-xl bg-slate-100 '>
+            <motion.div 
+            initial={{opacity: 0, y: 0}}
+            whileInView={{opacity: 1, y: -5}}
+            animate='visible'
+            viewport={{
+                amount: 'all',
+                once: true
+            }}
+            className='flex tablet:gap-20 justify-center phone:flex-col tablet:flex-row rounded-xl bg-slate-100 '>
                 <div className='p-10'> 
                     <h1 className='text-4xl font-bold'>Contact Us</h1>
-                    <p className='text-xl'>You may contact us below</p>
+                    <p className='text-xl'>Find us and get in touch.</p>
                     <section className='w-full flex flex-col h-1/2 justify-center'>
                         <ContactCard icon={<Call sx={{fontSize: 40}}/>} content={"09164228893"} />
                         <a href="https://web.facebook.com/MidzHomestay"><ContactCard icon={<Facebook sx={{fontSize: 40}} />} content={"@MidzHomestay"} /></a>
@@ -27,7 +37,7 @@ const Contact = () => {
                         </iframe>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
   )

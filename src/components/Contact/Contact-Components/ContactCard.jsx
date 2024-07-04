@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactCard = ({icon, content}) => {
   return (
-    <div className='flex justify-start items-center gap-3 p-4 rounded-xl'>
+    <div className='flex justify-start items-center gap-2 p-4 rounded-xl'>
       <div>
         {icon}
       </div>

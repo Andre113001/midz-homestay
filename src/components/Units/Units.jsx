@@ -16,6 +16,8 @@ import bookingLogo from '../../assets/icons/booking.png'
 
 import { Button } from '@mui/material';
 
+import { motion } from 'framer-motion';
+
 const Units = () => {
     const buttonStyle = {
         width: '100%',
@@ -38,8 +40,30 @@ const Units = () => {
     return (
         <div className='h-full phone:w-full tablet:w-3/4 justify-center flex flex-col items-center'>
             <div className='text-center flex flex-col justify-center items-center'>
-                <h1 className='tablet:text-5xl phone:text-3xl font-bold'>More Stays to Love</h1>
-                <p className='tablet:text-2xl phone:text-sm phone:text-center'>Explore our other available units now!</p>
+                <motion.h1 
+                    initial={{opacity: 0, y: 0}}
+                    whileInView={{opacity: 1, y: -5}}
+                    animate='visible'
+                    viewport={{
+                        amount: 'all',
+                        once: true
+                    }}
+                    className='tablet:text-5xl phone:text-3xl font-bold'
+                >
+                    More Stays to Love
+                </motion.h1>
+                <motion.p 
+                    initial={{opacity: 0, y: 0}}
+                    whileInView={{opacity: 1, y: -5}}
+                    animate='visible'
+                    viewport={{
+                        amount: 'all',
+                        once: true
+                    }}
+                    className='tablet:text-2xl phone:text-sm phone:text-center'
+                >
+                    Explore our other available units!
+                </motion.p>
             </div>
             <section className='flex tablet:flex-row phone:flex-col gap-3 mt-10 w-full justify-center'>
                 <UnitCard unitName={"Villa Alfonso by Midz Homestay"} imgName={alfonsoPic} logo={alfonsoLogo} newStatus={true} 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Amenity = ({icon, text, subtext}) => {
   return (
-    <div className='flex flex-col h-3/4 w-1/2 items-center text-center p-5 rounded-md'>
+    <div className='flex flex-col h-3/4 w-1/2 items-center   text-center p-5 rounded-md'>
       <div>
         {icon}
       </div>
@@ -10,7 +10,7 @@ const Amenity = ({icon, text, subtext}) => {
         {text}
       </h3>
       {subtext ? (
-        <p className='text-center  tablet:text-[1rem] phone:text-xs'>{subtext}</p>
+        <p className='text-center tablet:text-[1rem] phone:text-xs'>{subtext}</p>
       ): null}
     </div>
   )

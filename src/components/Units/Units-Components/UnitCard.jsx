@@ -1,10 +1,20 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const UnitCard = ({ unitName, imgName, logo, newStatus, linkButtons }) => {
   const [newUnit, setNewUnit] = useState(newStatus);
 
   return (
-    <div className='relative phone:w-full tablet:w-1/2 tablet:h-[30rem] phone:h-[20rem] text-center rounded-lg overflow-hidden group shadow-xl'>
+    <motion.div 
+      initial={{opacity: 0, y: 0}}
+      whileInView={{opacity: 1, y: -10}}
+      animate='visible'
+      viewport={{
+          amount: 'all',
+          once: true
+      }}
+      className='relative phone:w-full tablet:w-1/2 tablet:h-[30rem] phone:h-[20rem] text-center rounded-lg overflow-hidden group shadow-xl'
+    >
       {/* Image */}
       <div className='relative w-full h-full'>
         <img src={imgName} className='h-full w-full object-cover rounded-lg' alt={unitName} />
@@ -22,7 +32,7 @@ const UnitCard = ({ unitName, imgName, logo, newStatus, linkButtons }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
