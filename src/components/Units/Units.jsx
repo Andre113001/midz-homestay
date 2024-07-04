@@ -37,9 +37,9 @@ const Units = () => {
 
     return (
         <div className='h-full phone:w-full tablet:w-3/4 justify-center flex flex-col items-center'>
-            <div className='text-center'>
-                <h1 className='text-5xl font-bold'>Our other Units</h1>
-                <p className='text-2xl'>Check our other current units we have</p>
+            <div className='text-center flex flex-col justify-center items-center'>
+                <h1 className='text-5xl phone:text-3xl font-bold'>More Stays to Love</h1>
+                <p className='text-2xl tablet:w-3/4 phone:w-full phone:text-sm phone:text-center'>Explore our other available units now!</p>
             </div>
             <section className='flex tablet:flex-row phone:flex-col gap-3 mt-10 w-full justify-center'>
                 <UnitCard unitName={"Villa Alfonso by Midz Homestay"} imgName={alfonsoPic} logo={alfonsoLogo} newStatus={true} 
